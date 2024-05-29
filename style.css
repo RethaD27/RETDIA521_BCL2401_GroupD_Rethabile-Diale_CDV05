@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,8 +7,9 @@ body {
   color: #333;
 }
 
+/* Header Styles */
 header {
-  background-color: #333;
+  background-color: #333333;
   color: #fff;
   padding: 1em 0;
   text-align: center;
@@ -28,6 +30,11 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li a:hover {
+  color: #ff9900;
+}
+
+/* Section Styles */
 section {
   padding: 2em;
   margin: 2em 0;
@@ -35,44 +42,70 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#projects .project {
-  margin: 1em 0;
+section h1 {
+  color: #ff6600;
 }
 
-#projects .project img {
+/* Project Styles */
+.project {
+  margin: 2em 0;
+}
+
+.project img {
   max-width: 100%;
   height: auto;
 }
 
-#projects .project h2 {
+.project h2 {
   margin-top: 0.5em;
 }
 
+/* Profile Picture Styles */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Skills Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Footer Styles */
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 1em 0;
+  padding: 0.5em 0;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
 
+/* Social Links Styles */
 .social-links {
   margin-top: 1em;
+  text-align: center;
 }
 
 .social-links a {
-  color: #333;
   margin: 0 0.5em;
   font-size: 1.5em;
   text-decoration: none;
 }
 
 .social-links a:hover {
-  color: #0073b1; /* LinkedIn color */
+  color: #ff6600;
 }
 
+/* Responsive Design */
 @media (max-width: 600px) {
   nav ul li {
     display: block;
@@ -81,5 +114,14 @@ footer {
 
   footer {
     position: static;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .social-links a {
+    font-size: 1.2em;
   }
 }
