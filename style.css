@@ -68,7 +68,7 @@ section h1 {
   height: 350px;
   margin: 0 auto;
   display: block;
-  border-radius: 80%;
+  border-radius: 50%;
 }
 
 /* Skills Styles */
@@ -111,6 +111,14 @@ footer {
 
 .social-links a:hover {
   color: #ff6600;
+}
+
+.social-links a i.linkedin {
+  color: #0073b1;
+}
+
+.social-links a i.github {
+  color: #333;
 }
 
 /* Responsive Design */
